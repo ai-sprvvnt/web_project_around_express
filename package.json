@@ -1,0 +1,35 @@
+{
+  "name": "web_project_around_express",
+  "version": "1.0.0",
+  "description": "Backend con Express para el proyecto Around (usuarios y tarjetas)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-sprvvnt/web_project_around_express.git"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "node"
+  ],
+  "author": "Felipe Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ai-sprvvnt/web_project_around_express/issues"
+  },
+  "homepage": "https://github.com/ai-sprvvnt/web_project_around_express#readme",
+  "dependencies": {
+    "express": "^4.22.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "nodemon": "^3.1.14"
+  }
+}

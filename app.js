@@ -1,0 +1,19 @@
+const express = require('express');
+
+const app = express();
+const { PORT = 3000 } = process.env;
+
+const usersRouter = require('./routes/users');
+const cardsRouter = require('./routes/cards');
+
+app.use('/users', usersRouter);
+app.use('/cards', cardsRouter);
+
+// Ruta no encontrada
+app.use((req, res) => {
+  res.status(404).send({ message: 'Recurso solicitado no encontrado' });
+});
+
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
+});
