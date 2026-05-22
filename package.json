@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/ai-sprvvnt/web_project_around_express#readme",
   "dependencies": {
-    "express": "^4.22.1"
+    "express": "^4.22.1",
+    "mongoose": "^9.6.2"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
